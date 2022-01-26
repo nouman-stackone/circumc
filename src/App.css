@@ -1,8 +1,23 @@
+@screen sm {
+  .cntner {
+    background-image: url("./Assets/bg-web.png");
+    margin: 0;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .listItem {
   border-radius: 14px;
-  padding: 0.2rem 0.5rem 0.3rem 0.5rem;
-  margin-right: 0.5rem;
-  font-size: 13px;
+  padding: 0.2rem 1.2rem 0.3rem 1.2rem;
+  margin-right: 1rem;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
 }
 

@@ -11,15 +11,15 @@ import care from "../Assets/care.svg";
 import park_view from "../Assets/park_view.svg";
 import skypark from "../Assets/skypark.svg";
 import ptcl from "../Assets/ptcl.svg";
+import logo2 from "../Assets/logo2.png";
 
 const PartnerIcon = () => {
   const className = "h-9 w-9 md:h-11 md:w-11 lg:h-14 lg:w-14 mr-4 mb-4";
   return (
     <div className="flex flex-wrap mt-4">
       <img className={className} src={unodc} alt="partner-logo" />
-      <img className={className} src={min} alt="partner-logo" />
+      <img className={className} src={logo2} alt="partner-logo" />
       <img className={className} src={usaid} alt="partner-logo" />
-      <img className={className} src={fin} alt="partner-logo" />
       <img className={className} src={bahria_town} alt="partner-logo" />
       <img className={className} src={paf} alt="partner-logo" />
       <img className={className} src={pcb} alt="partner-logo" />

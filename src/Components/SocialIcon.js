@@ -1,10 +1,11 @@
 import React from "react";
 
-const SocialIcon = ({ icon, bgColor, title }) => {
+const SocialIcon = ({ icon, bgColor, title, link }) => {
   return (
-    <div
-      style={{ backgroundColor: bgColor }}
-      className="
+    <a href={link} target="_blank">
+      <div
+        style={{ backgroundColor: bgColor }}
+        className="
         md:mr-3
         mr-2
 
@@ -32,14 +33,17 @@ const SocialIcon = ({ icon, bgColor, title }) => {
         items-center
         justify-center
         "
-    >
-      <img
-        src={icon}
-        alt="social-icon"
-        className=" h-8 w-8 md:h-11 md:w-11 lg:h-14 lg:w-14"
-      />
-      <p className="text-center text-xs sm:text-sm mt-2">{title}</p>
-    </div>
+      >
+        <img
+          src={icon}
+          alt="social-icon"
+          className=" h-8 w-8 md:h-11 md:w-11 lg:h-14 lg:w-14"
+        />
+        <p className="text-center text-xs sm:text-sm mt-2 font-semibold">
+          {title}
+        </p>
+      </div>
+    </a>
   );
 };
 
