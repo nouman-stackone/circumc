@@ -6,8 +6,8 @@ const SocialIcon = ({ icon, bgColor, title, link }) => {
       <div
         style={{ backgroundColor: bgColor }}
         className="
-        md:mr-3
-        mr-2
+        md:m-3
+        mr-3
 
         lg:px-10
         lg:py-8
@@ -19,12 +19,13 @@ const SocialIcon = ({ icon, bgColor, title, link }) => {
         py-4
         flex-1
         sm:flex-none
-      
+        w-24
+        sm:w-auto
         rounded-xl
         
         lg:mb-3
         md:mb-3
-        mb-2
+        mb-3
         
         md:hover:scale-105
         cursor-pointer

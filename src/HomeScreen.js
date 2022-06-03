@@ -1,6 +1,7 @@
 import React from "react";
 import main_img from "./Assets/header-img.svg";
-import logo from "./Assets/logo.svg";
+import logo1 from "./Assets/logo.svg";
+import logo2 from "./Assets/bg_logo_mobile.png";
 import web from "./Assets/web.svg";
 import yt from "./Assets/yt.svg";
 import wa from "./Assets/wa.svg";
@@ -90,30 +91,31 @@ const HomeScreen = ({ setScreen }) => {
         </li>
       </ul>
       {/* top logo */}
-      <div className="flex justify-center my-4">
-        <img src={logo} alt="logo" className="sm:hidden" />
+      <div className="flex justify-center my-4 absolute -mt-12">
+        <img src={logo2} alt="logo" className="sm:hidden" />
       </div>
       {/* Hero content div */}
-      <div className="h-32 sm:h-40 md:h-48 lg:h-56 bg-[#FF4147] rounded-[12px] relative flex items-center">
-        <div className="p-2 sm:p-8 md:p-6 lg:p-11 w-3/5 sm:w-4/6 md:w-4/6 lg:w-3/4">
-          <p
-            style={{ fontFamily: "Roboto" }}
-            className="text-white sm:text-2xl md:text-3xl lg:text-4xl cursor-default sm:mb-3"
-          >
-            ALL YOUR DIGITAL CREATIVE <br className="hidden sm:block" />
-            SOLUTIONS ARE IN ONE PLACE.
-          </p>
-          <p
-            // style={{ fontFamily: "Roboto" }}
-            className="text-white text-[10px] sm:text-base md:text-lg lg:text-2xl cursor-default"
-          >
-            Design | Animation | Production | Events | Print Media
-          </p>
-        </div>
-        <img
-          src={laptop}
-          alt="main_img"
-          className="
+      <div className="pt-28 sm:pt-6">
+        <div className="h-32 sm:h-40 md:h-48 lg:h-56 bg-[#FF4147] rounded-[12px] relative flex items-center">
+          <div className="p-2 sm:p-8 md:p-6 lg:p-11 w-3/5 sm:w-4/6 md:w-4/6 lg:w-3/4">
+            <p
+              style={{ fontFamily: "Roboto" }}
+              className="text-white sm:text-2xl md:text-3xl lg:text-4xl cursor-default sm:mb-3"
+            >
+              ALL YOUR DIGITAL CREATIVE <br className="hidden sm:block" />
+              SOLUTIONS ARE IN ONE PLACE.
+            </p>
+            <p
+              // style={{ fontFamily: "Roboto" }}
+              className="text-white text-[10px] sm:text-base md:text-lg lg:text-2xl cursor-default"
+            >
+              Design | Animation | Production | Events | Print Media
+            </p>
+          </div>
+          <img
+            src={laptop}
+            alt="main_img"
+            className="
         absolute
         h-44
         w-44
@@ -132,8 +134,10 @@ const HomeScreen = ({ setScreen }) => {
         lg:-top-24 
         lg:-right-8
       "
-        />
+          />
+        </div>
       </div>
+
       {/* list of links (for mobile) */}
       <ul className="flex-row mt-6 flex flex-wrap sm:hidden">
         <li
@@ -212,7 +216,7 @@ const HomeScreen = ({ setScreen }) => {
       <p className="mt-2 sm:mt-4 text-sm sm:text-xl md:text-2xl font-medium">
         Let's Collaborate
       </p>
-      <div className="flex flex-row flex-wrap mt-2 md:mt-4">
+      <div className="flex justify-center sm:justify-start flex-row flex-wrap mt-2 md:mt-4">
         <SocialIcon
           link="https://circumc.com/"
           bgColor="#E5F6FE"
